@@ -1,0 +1,11 @@
+{
+  "name": "bwek",
+  "version": "1.0.2",
+  "description": "한국어->뷁어 변환, 인코딩이 깨지는 원리가 아닌 단순히 바꾸는 것",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "darkapplepower",
+  "license": "WTFPL"
+}
