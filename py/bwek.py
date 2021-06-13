@@ -67,3 +67,16 @@ def str2bwek(string):
     return _encodeBase64(_encodeByteString(string))
 def bwek2str(string):
     return _decodeByte(_slice8(_Base64toByte(string)))
+if __name__=="__main__":
+        inp=None
+        while inp!="0":
+                inp=input("한국어->뷁어는 1, 뷁어->한국어는 2, 종료는 0을 입력해주세요\n")
+                if inp=="1":
+                        inp2=input("뷁어로 변환할 문자를 입력해주세요\n")
+                        print(str2bwek(inp2))
+                elif inp=="2":
+                        inp2=input("한국어로 변환할 뷁어를 입력해주세요\n")
+                        try:
+                                print(bwek2str(inp2))
+                        except:
+                                print("문제가 발생했습니다. 제대로 된 뷁어를 입력해주세요")
